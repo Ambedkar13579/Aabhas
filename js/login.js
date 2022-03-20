@@ -33,6 +33,18 @@ login.addEventListener("click", ( )=>{
   container.classList.remove("active");
 });
 
+document.getElementById('submit').onclick = function() {
+  var selected = [];
+  for (var option of document.getElementById('role').options)
+  {
+      if (option.selected) {
+          selected.push(option.value);
+      }
+  }
+  alert(selected);
+}
 
+
+    
 
     
